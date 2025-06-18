@@ -34,6 +34,12 @@ services:
           action: rebuild
         - path: ./frontend/package-lock.json
           action: rebuild
+        - path: ./package.json
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+        - path: ./Dockerfile
+          action: rebuild
         # it'll watch for changes in the frontend directory and sync the changes with the container real time
         - path: ./frontend
           target: /app
